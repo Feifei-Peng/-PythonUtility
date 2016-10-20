@@ -2,6 +2,7 @@ Light curve Model
 ---
 
 Creator:	Kyle Pearson
+
 email:		pearson @email.arizona.edu
 ___
 
