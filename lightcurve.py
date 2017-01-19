@@ -1,5 +1,6 @@
 def lightcurve_fit(_RpRs,_tmid,_aR,_i,_u1,_u2,_P,_e,_omega,_time,_flux,_eflux):
 	'''
+	Use lmfit package
 
 	INPUT:
 		_RpRs
@@ -223,7 +224,7 @@ def lightcurve_fit(_RpRs,_tmid,_aR,_i,_u1,_u2,_P,_e,_omega,_time,_flux,_eflux):
 	            (min(t),max(t)), # tmid
 	            (None,None), # A0  #cooeficient linear for airmass correction
 	            (0,0), # A1 #coefficient quadratic for aimass correction
-	            (0,0)] # A2 #coefficient polynomial for airmass correction 
+	            (0,0)] # A2 #coefficient polynomial for airmass correction
 
 
 	myfit = lc_fitter(t,data,dataerr=dataerr,init= p_init,bounds= mybounds,)
